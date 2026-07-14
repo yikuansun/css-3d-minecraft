@@ -239,32 +239,32 @@
                     {#if cell > 0}
                         {#if worldMatrix?.[layerX]?.[layerY - 1]?.[layerZ] === 0}
                             <!-- Top -->
-                            <Plane x={cubeX} y={cubeY - CUBE_SIZE / 2} z={cubeZ} angleX={90} width={CUBE_SIZE} height={CUBE_SIZE} image="/block_textures/{TEXTURE_NAMES[cell]}_top.png" brightness={120}
+                            <Plane x={cubeX} y={cubeY - CUBE_SIZE / 2} z={cubeZ} angleX={90} width={CUBE_SIZE} height={CUBE_SIZE} image="./block_textures/{TEXTURE_NAMES[cell]}_top.png" brightness={120}
                                 style={focusedBlockPosition[0] === layerX && focusedBlockPosition[1] === layerY && focusedBlockPosition[2] === layerZ ? focusedBlockStyle : ""} />
                         {/if}
                         {#if worldMatrix?.[layerX]?.[layerY + 1]?.[layerZ] === 0}
                             <!-- Bottom -->
-                            <Plane x={cubeX} y={cubeY + CUBE_SIZE / 2} z={cubeZ} angleX={90} width={CUBE_SIZE} height={CUBE_SIZE} image="/block_textures/{TEXTURE_NAMES[cell]}_bottom.png" brightness={40}
+                            <Plane x={cubeX} y={cubeY + CUBE_SIZE / 2} z={cubeZ} angleX={90} width={CUBE_SIZE} height={CUBE_SIZE} image="./block_textures/{TEXTURE_NAMES[cell]}_bottom.png" brightness={40}
                                 style={focusedBlockPosition[0] === layerX && focusedBlockPosition[1] === layerY && focusedBlockPosition[2] === layerZ ? focusedBlockStyle : ""} />
                         {/if}
                         {#if worldMatrix?.[layerX - 1]?.[layerY]?.[layerZ] === 0}
                             <!-- Left -->
-                            <Plane x={cubeX - CUBE_SIZE / 2} y={cubeY} z={cubeZ} angleY={90} width={CUBE_SIZE} height={CUBE_SIZE} image="/block_textures/{TEXTURE_NAMES[cell]}_side.png" brightness={60}
+                            <Plane x={cubeX - CUBE_SIZE / 2} y={cubeY} z={cubeZ} angleY={90} width={CUBE_SIZE} height={CUBE_SIZE} image="./block_textures/{TEXTURE_NAMES[cell]}_side.png" brightness={60}
                                 style={focusedBlockPosition[0] === layerX && focusedBlockPosition[1] === layerY && focusedBlockPosition[2] === layerZ ? focusedBlockStyle : ""} />
                         {/if}
                         {#if worldMatrix?.[layerX + 1]?.[layerY]?.[layerZ] === 0}
                             <!-- Right -->
-                            <Plane x={cubeX + CUBE_SIZE / 2} y={cubeY} z={cubeZ} angleY={90} width={CUBE_SIZE} height={CUBE_SIZE} image="/block_textures/{TEXTURE_NAMES[cell]}_side.png" brightness={100}
+                            <Plane x={cubeX + CUBE_SIZE / 2} y={cubeY} z={cubeZ} angleY={90} width={CUBE_SIZE} height={CUBE_SIZE} image="./block_textures/{TEXTURE_NAMES[cell]}_side.png" brightness={100}
                                 style={focusedBlockPosition[0] === layerX && focusedBlockPosition[1] === layerY && focusedBlockPosition[2] === layerZ ? focusedBlockStyle : ""} />
                         {/if}
                         {#if worldMatrix?.[layerX]?.[layerY]?.[layerZ - 1] === 0}
                             <!-- Front -->
-                            <Plane x={cubeX} y={cubeY} z={cubeZ - CUBE_SIZE / 2} width={CUBE_SIZE} height={CUBE_SIZE} image="/block_textures/{TEXTURE_NAMES[cell]}_side.png" brightness={80}
+                            <Plane x={cubeX} y={cubeY} z={cubeZ - CUBE_SIZE / 2} width={CUBE_SIZE} height={CUBE_SIZE} image="./block_textures/{TEXTURE_NAMES[cell]}_side.png" brightness={80}
                                 style={focusedBlockPosition[0] === layerX && focusedBlockPosition[1] === layerY && focusedBlockPosition[2] === layerZ ? focusedBlockStyle : ""} />
                         {/if}
                         {#if worldMatrix?.[layerX]?.[layerY]?.[layerZ + 1] === 0}
                             <!-- Back -->
-                            <Plane x={cubeX} y={cubeY} z={cubeZ + CUBE_SIZE / 2} width={CUBE_SIZE} height={CUBE_SIZE} image="/block_textures/{TEXTURE_NAMES[cell]}_side.png" brightness={80}
+                            <Plane x={cubeX} y={cubeY} z={cubeZ + CUBE_SIZE / 2} width={CUBE_SIZE} height={CUBE_SIZE} image="./block_textures/{TEXTURE_NAMES[cell]}_side.png" brightness={80}
                                 style={focusedBlockPosition[0] === layerX && focusedBlockPosition[1] === layerY && focusedBlockPosition[2] === layerZ ? focusedBlockStyle : ""} />
                         {/if}
                     {/if}
