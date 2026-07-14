@@ -278,12 +278,14 @@
     {/if}
 </div>
 
-<span>FPS: {displayedFPS}</span>
-<p>
-    Camera position (world): {camera.x}, {camera.y}, {camera.z} <br />
-    Camera position (block): {worldPositionToGridCoord(camera.x, camera.y, camera.z)} <br />
-    Focused block position: {focusedBlockPosition}
-</p>
+<div style:position="fixed" style:top="0" style:left="0" style:background-color="#44444499" style:color="white" style:padding="8px">
+    <span>FPS: {displayedFPS}</span> <br />
+    <span>
+        Camera position (world): {camera.x}, {camera.y}, {camera.z} <br />
+        Camera position (block): {worldPositionToGridCoord(camera.x, camera.y, camera.z)} <br />
+        Focused block position: {focusedBlockPosition}
+    </span>
+</div>
 
 <style>
 </style>
